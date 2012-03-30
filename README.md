@@ -15,4 +15,3 @@ http://osces.herokuapp.com
 	app/assets/stylesheets/... düzenle
 	rails g bootstrap:install
 
-Çay molası :P
