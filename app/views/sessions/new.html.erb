@@ -1,5 +1,4 @@
 <h1>login</h1>
-:
 <%= form_tag sessions_path do %>
 	<div class="field">
 	    <%= label_tag "Username" %>
@@ -9,7 +8,7 @@
 	    <%= label_tag :password %>
 	    <%= password_field_tag :password %>
 	</div>
-	<div class="actions">
-	    <%= submit_tag "Login" %>
+	<div class="form-actions">
+	    <%= submit_tag "Login",:class =>"btn btn-primary" %>
 	</div>
 <% end %>
