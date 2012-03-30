@@ -11,6 +11,11 @@
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="home">ANASAYFA</a>
+      <ul class="nav pull-right">
+        <% if session[:user_id] %>
+          <li><%= session[:username] %> giriş yaptı</li>
+        <% end %>
+      <ul>
     </div>
   </div>
 </div>
@@ -18,7 +23,7 @@
   <%= yield %>
 <footer>
 <hr>
-Aşkın Gedik 
+Aşkın Gedik
 </footer>
 </div>
 </body>
