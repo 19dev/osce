@@ -13,3 +13,5 @@ https://github.com/seyyah/osce/blob/login/README.md hepsini yapmadım!
 	:
 	:
 	:.
+
+elveda heroku artık çalışmıyor :( 
