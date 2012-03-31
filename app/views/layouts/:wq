@@ -11,10 +11,9 @@
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="/home/index">ANASAYFA</a>
-      <ul class="nav pull-right" >
+      <ul class="nav pull-right">
         <% if current_user %>
-          <li><%= link_to current_user.username,"" %></li> 
-          <li><%= link_to "Çıkış",logout_url %> </li>
+          <li>Hoşgeldiniz Sayin <%= current_user.username %> | <%= link_to "Çıkış Yap",logout_url %>
         <% end %>
       <ul>
     </div>
