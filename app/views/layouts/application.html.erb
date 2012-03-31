@@ -13,7 +13,8 @@
       <a class="brand" href="/home/index">ANASAYFA</a>
       <ul class="nav pull-right">
         <% if session[:user_id] %>
-          <li><%= session[:username] %> giriş yaptı</li>
+          <li>Hoşgeldiniz Sayin <%= session[:username]%> | <%= session[:user_id] %> </li>
+          <li> <%= link_to "Çıkış Yap",logout_path %>
         <% end %>
       <ul>
     </div>

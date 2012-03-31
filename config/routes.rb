@@ -1,10 +1,9 @@
 Osce::Application.routes.draw do
   get "sessions/new"
-  resources :sessions
+  resources :sessions, only: [:new, :create, :destroy]
   
-  get "login" => "sessions#new", :as => "login"
   match "login" => "sessions#new"
-  match "signout", to: "sessions#destroy", via: :delete
+  match "logout" => "sessions#destroy"
 
   match "home" => "home#index"
   get "home/index"

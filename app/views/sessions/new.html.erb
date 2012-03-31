@@ -1,7 +1,9 @@
 <h1>login</h1>
 <%= form_tag sessions_path do %>
   <% if flash[:error] %>
-      <%= flash[:error] %> 
+      <div class="alert alert-error">
+	  <%= flash[:error] %> 
+      </div>
   <% end %>
   <div class="field">
 	    <%= label_tag "Username" %>
