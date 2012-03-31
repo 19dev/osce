@@ -76,23 +76,12 @@ o zaman,
 
 assets grubunda kini sil ve dışarıya al.
 
-yani production ayağında (herkese sunduğumuz hali ki bunu şimdilik heroku
-üzerinden yapıyoruz) asset'leri (css vs) önden derle ki daha sonradan
-derlemenin şu şekilde otomatik yapıldığını göreceksiniz,
+commitle ve heroku'ya tekrardan yükle,
 
-	$ git push heroku-bsaral-vys auth:master
-	[...]
-	Running: rake assets:precompile
-	[...]
+	$ git commit -a -m "Gemfile:heroku: bugfix: twitter-bootstrap"
+	$ git push heroku-askn-osce bugfix-heroku:master
 
-commitle ve github'a gönder,
-
-$ git commit -a -m "production:asset:precompiled:true"
-$ git push origin auth
-ardından heroku'ya da gönder,
-
-$ git push heroku-bsaral-vys auth:master
-Test zamanıdır, http://bsaral-vys-auth.herokuapp.com.
+Test zamanıdır, http://askn-osce.herokuapp.com. Olay.
 
 # askn
 
