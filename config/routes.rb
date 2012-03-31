@@ -1,10 +1,12 @@
 Osce::Application.routes.draw do
   get "sessions/new"
   resources :sessions
-
+  
   get "login" => "sessions#new", :as => "login"
+  match "login" => "sessions#new"
   match "signout", to: "sessions#destroy", via: :delete
 
+  match "home" => "home#index"
   get "home/index"
   root :to => 'home#index'
   # The priority is based upon order of creation:
