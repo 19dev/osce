@@ -1,10 +1,13 @@
-<h1>login</h1>
+<div class="login">
+<h1>TODO</h1>
 <%= form_tag sessions_path do %>
   <% if flash[:error] %>
       <div class="alert alert-error">
 	  <%= flash[:error] %> 
       </div>
   <% end %>
+
+<div class="login_in">
   <div class="field">
 	    <%= label_tag "Username" %>
 	    <%= text_field_tag :username, params[:username] %>
@@ -13,7 +16,7 @@
 	    <%= label_tag :password %>
 	    <%= password_field_tag :password %>
 	</div>
-	<div class="form-actions">
 	    <%= submit_tag "Login",:class =>"btn btn-primary" %>
-	</div>
-<% end %>
+          <% end %>
+        </div>
+    </div>

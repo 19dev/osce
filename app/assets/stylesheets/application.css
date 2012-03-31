@@ -13,7 +13,8 @@
 */
 
 body {
-      background: url("/assets/bg.jpg") repeat;
+      background: url("/assets/body.png") repeat; 
+     /* background: url("/assets/bg.jpg") repeat; */
       padding:60px 0;
       text-align:center;
 }
