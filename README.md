@@ -81,7 +81,8 @@ commitle ve heroku'ya tekrardan yükle,
 	$ git commit -a -m "Gemfile:heroku: bugfix: twitter-bootstrap"
 	$ git push heroku-askn-osce bugfix-heroku:master
 
-Test zamanıdır, http://askn-osce.herokuapp.com. Olay.
+Test zamanıdır, http://askn-osce.herokuapp.com. Olay. Test kullanıcısı
+"seyyah:secret".
 
 # askn
 
