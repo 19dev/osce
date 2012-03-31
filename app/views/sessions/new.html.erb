@@ -1,6 +1,9 @@
 <h1>login</h1>
 <%= form_tag sessions_path do %>
-	<div class="field">
+  <% if flash[:error] %>
+      <%= flash[:error] %> 
+  <% end %>
+  <div class="field">
 	    <%= label_tag "Username" %>
 	    <%= text_field_tag :username, params[:username] %>
 	</div>

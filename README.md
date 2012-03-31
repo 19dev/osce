@@ -1,17 +1,15 @@
 http://osces.herokuapp.com
 
-	rails new osce
+https://github.com/seyyah/osce/blob/login/README.md hepsini yapmadım!
 	Gemfile düzenle
-	bundle install
-	github ayarları //
-	heroku create --stack cedar osces
-	git add .
-	git commit -am "hop"
-	git push heroku master
-	rails g controller home index
-	rm public/index.html
-	config/routes.rb ayar ver
-	app/views/home/index.html.erb düzenle
-	app/assets/stylesheets/... düzenle
-	rails g bootstrap:install
-
+	rails g controller Users new
+	rails g model user username:string password_digest:string
+	rake db:migrate
+	app/models/user.rb düzenle
+	rails g controller sessions new
+	app/views/sessions/new.html.erb düzenle
+	config/routes.rb düzenle
+	sessions_controller.rb düzenle
+	:
+	:
+	:.

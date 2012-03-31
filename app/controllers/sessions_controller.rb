@@ -7,8 +7,11 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to home_index_path # TODO kullanıcı girince nere yönlendirilecek
     else
-      flash.now.alert = "Kullanici adin ve/veya parolan hatali"
+      flash[:error] = "Kullanici adin ve/veya parolan hatali"
       render "new"
     end
+  end
+  def destroy
+
   end
 end
